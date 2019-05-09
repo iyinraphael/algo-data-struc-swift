@@ -3,5 +3,6 @@
     <pages>
         <page name='Data Structure and Protocol Implementation'/>
         <page name='Stack'/>
+        <page name='Queue'/>
     </pages>
 </playground>
