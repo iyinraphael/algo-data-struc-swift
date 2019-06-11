@@ -4,5 +4,7 @@
         <page name='Data Structure and Protocol Implementation'/>
         <page name='Stack'/>
         <page name='Queue'/>
+        <page name='Circular Buffer '/>
+        <page name='Sorting'/>
     </pages>
 </playground>

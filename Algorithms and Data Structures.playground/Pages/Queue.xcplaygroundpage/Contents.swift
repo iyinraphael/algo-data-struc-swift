@@ -26,6 +26,10 @@ public struct Queue<T> {
     
     public init() {}
     
+    public init<S: Sequence>(_ elements: S) where S.Iterator.Element == T {
+        data.append(contentsOf: elements)
+    }
+    
     public mutating func deque() -> T? {
         return data.removeFirst()
     }
@@ -73,9 +77,35 @@ queue.enqueue(120)
 queue.enqueue(125)
 queue.enqueue(130)
 
+print(queue)
+
 let x = queue.deque()
 let y = queue.peek()
 let z = queue.deque()
+
+extension Queue: CustomStringConvertible, CustomDebugStringConvertible {
+    
+    public var description: String {
+        return data.description
+    }
+    
+    public var debugDescription: String {
+        return data.debugDescription
+    }
+}
+
+extension Queue: ExpressibleByArrayLiteral {
+    public init(arrayLiteral elements: T...) {
+        self.init(elements)
+    }
+}
+
+
+//MARK :-  Priority Queue is like a regular queue except each element has a priority assigned to it.
+/**
+ Elements that have a higher priority are dequeued before lower priortiy elements.  
+ **/
+
 
 
 
