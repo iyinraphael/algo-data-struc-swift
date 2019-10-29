@@ -6,5 +6,8 @@
         <page name='Queue'/>
         <page name='Circular Buffer '/>
         <page name='Sorting'/>
+        <page name='Binary Search'/>
+        <page name='Hacker-rank'/>
+        <page name='Linked-List'/>
     </pages>
 </playground>

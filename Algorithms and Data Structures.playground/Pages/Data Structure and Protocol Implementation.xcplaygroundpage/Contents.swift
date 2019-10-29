@@ -2,7 +2,7 @@
 
 import Foundation
 
-// MARK: IteratorProtocol - The sole purpose of IteratorProtocol is ti encapsulate the iteration state of a collection by providing the next() method
+// MARK: IteratorProtocol - The sole purpose of IteratorProtocol is to encapsulate the iteration state of a collection by providing the next() method
 public protocol IteratorProtocol {
     ///The type of element traversed by the iterator.
     associatedtype Element

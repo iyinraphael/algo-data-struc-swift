@@ -71,17 +71,35 @@ public struct Queue<T> {
 }
 
 var queue = Queue<Int>()
+queue.capacity = 4
 
-queue.enqueue(100)
-queue.enqueue(120)
-queue.enqueue(125)
-queue.enqueue(130)
+queue.enqueue(5)
+queue.enqueue(13)
+queue.enqueue(8)
+queue.enqueue(2)
+queue.enqueue(10)
 
-print(queue)
 
-let x = queue.deque()
-let y = queue.peek()
-let z = queue.deque()
+print(queue.capacity)
+
+var newQueue = Queue<Int>()
+newQueue.capacity = 6
+
+
+
+newQueue.enqueue(5)
+newQueue.enqueue(6)
+newQueue.enqueue(7)
+newQueue.enqueue(8)
+newQueue.enqueue(9)
+newQueue.enqueue(10)
+
+print(newQueue.isFull())
+print(newQueue.capacity)
+
+//let x = queue.deque()
+//let y = queue.peek()
+//let z = queue.deque()
 
 extension Queue: CustomStringConvertible, CustomDebugStringConvertible {
     
